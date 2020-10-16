@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>E-edPort</title>
+  
+      
+    
+  </head>
+  <body>
+    
+   
+   <!--  navbar -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark  ">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto nav-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="material-icons material-icons-outlined" style="color: whitesmoke;">settings</i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="material-icons material-icons-outlined " style="color: whitesmoke;">account_circle</i>
+                  </a>
+                </li>  
+              </ul>
+            </div>  
+          </nav>
+
+          <!-- main section -->
+          <div  class="container">
+          <div class="main-section">
+                <div class="row " >
+                    <div class="col-lg-8 main-feed  col-sm-12 col-md-8 col-sm-12 col-xs-12" >
+                     
+                         <div class="host-info">
+                             <div class="hostPic">Host video/pic</div>
+                             <div class="details">
+                                <span class="className" >Chemistry Class A</span>
+                                <span class="hostName">Teacher: Mr. John Doe</span>
+                             </div>
+                             <i class="material-icons material-icons-outlined  video-buttons " id="fullscreen" >fullscreen</i>
+                        </div>
+                        
+                         
+                        <video autoplay id="video"></video>
+                        
+                        <p id="videopaused">Video Paused</p>
+                        <ul class="firstlist">
+                            <li>
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="videocam">videocam_off</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="mic" >mic_off</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="copy">content_copy</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="call_end" >call_end</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="people">people</i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="chatbutton">chat_bubble_outline</i></a>
+                            </li>
+                            <li >
+                                <a href="#"><i class="material-icons material-icons-outlined video-buttons"  id="more" >more_horiz</i></a>
+                                <ul class="submenu">
+                                    <li><i class="material-icons material-icons-outlined submenu-button" >edit</i></li>
+                                    <li><i class="material-icons material-icons-outlined submenu-button" >content_paste</i></li>
+                                    <li><i class="material-icons material-icons-outlined submenu-button" >poll</i></li>
+                                    <li><i class="material-icons material-icons-outlined video-buttons" id="copy">content_copy</i>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="mobpeople">people</i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="material-icons material-icons-outlined video-buttons" id="chatbutton">chat_bubble_outline</i></a>
+                                    </li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                   <!--  right section -->
+                    <div class="col-lg-3 right-section mx-auto col-md-3 col-sm-8" style="margin-left: 2vw;" >
+                        <div class="user">
+                            <div class="user-details">
+                                
+                            <img src="./images/user.jpeg" class="userimg" width="35%" height="100vh">
+                            <p style="font-size: 16px; line-height: 24px;">Mragisha Jain <br>
+                                 <span style="color: gray; font-size: 12px; line-height: 18px;">Student</span> </p>
+                            </div>
+
+                            <ul>
+                                <li><i class="material-icons material-icons-outlined " id="raisehand" >pan_tool</i></li>
+                                <li><i class="material-icons material-icons-outlined " id="yes" >done</i></li>
+                                <li><i class="material-icons material-icons-outlined " id="no">clear</i></li>
+                                <li><i class="material-icons material-icons-outlined " id="coffeebreak">local_cafe</i></li>
+                            </ul>
+                            
+                        </div>
+                        <div id="participants"  >
+                            <div id="style-3" class="scrollbar" >
+                                
+                            <div class="parti-head">
+                                <p style="font-weight: bold; font-size: 16px; padding: 10px;">Participants</p>
+                                <i class="material-icons material-icons-outlined " id="close" style="padding: 10px; color: rgb(199, 198, 198);" >clear</i>
+                            </div>
+
+                            <div class="participant" >
+                                <div style="height: 80px; width: 80px; border-radius: 30px; background-color: gray;"></div>
+                                <div class="parti-name">
+                                    <span style="font-size: 16px;">John Doe</span>
+                                    <span style="font-size: 12px; color: gray;">Teacher</span>
+                                </div>
+                                <i class="material-icons material-icons-outlined parti-chat " >chat_bubble_outline</i>
+                            </div>
+                            <div class="participant">
+                                <img src="./images/participant.jpeg" height="80px" width="80px">
+                                <div class="parti-name">
+                                    <span style="font-size: 16px;">Shreya</span>
+                                     <span style="font-size: 12px; color: gray;">Student</span>
+                                     <i class="material-icons material-icons-outlined " style="color: #C07E41; font-size: 20px;" >local_cafe</i>
+                                        </div>
+                                <i class="material-icons material-icons-outlined parti-chat" >chat_bubble_outline</i>
+                            </div>
+                            <div class="participant">
+                                <div style="height: 80px; width: 80px; border-radius: 30px; background-color: gray; border: 2px solid green;"></div>
+                                <div class="parti-name">
+                                    <span style="font-size: 16px;">Shreya</span>
+                                     <span style="font-size: 12px; color: gray;">Student</span>
+                                     <i class="material-icons material-icons-outlined " style="color: green; font-size: 20px;" >done</i>
+                                        </div>
+                                <i class="material-icons material-icons-outlined parti-chat" >chat_bubble_outline</i>
+                            </div>
+                            <div class="participant">
+                                <div style="height: 80px; width: 80px; border-radius: 30px; background-color: gray; border: 2px solid green;"></div>
+                                <div class="parti-name">
+                                    <span style="font-size: 16px;">Shreya</span>
+                                     <span style="font-size: 12px; color: gray;">Student</span>
+                                     <i class="material-icons material-icons-outlined " style="color: green; font-size: 20px;" >done</i>
+                                        </div>
+                                <i class="material-icons material-icons-outlined parti-chat" >chat_bubble_outline</i>
+                            </div>
+                            <div class="participant">
+                                <div style="height: 80px; width: 80px; border-radius: 30px; background-color: gray; border: 2px solid green;"></div>
+                                <div class="parti-name">
+                                    <span style="font-size: 16px;">Shreya</span>
+                                     <span style="font-size: 12px; color: gray;">Student</span>
+                                     <i class="material-icons material-icons-outlined " style="color: green; font-size: 20px;" >done</i>
+                                        </div>
+                                <i class="material-icons material-icons-outlined parti-chat" >chat_bubble_outline</i>
+                            </div>
+                            
+                           
+                            
+                        </div>
+                        </div> 
+                        <div id="chats">
+                            <div class="chat-head">
+                                <p style="font-weight: bold; font-size: 16px; padding: 10px;">Chat with everyone</p>
+                                <i class="material-icons material-icons-outlined " style="padding: 10px; color: rgb(199, 198, 198);" >clear</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+
+    
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
